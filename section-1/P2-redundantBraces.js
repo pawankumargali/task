@@ -16,7 +16,7 @@ function hasRedundantBraces(exp) {
     if(exp.length==0) 
         return -1;
 
-    const stack = [];
+    const stack = new Array(exp.length);
 
     for(let i=0; i<exp.length; i++) {
 
